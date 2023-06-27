@@ -1,0 +1,60 @@
+<header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+
+  <a class="navbar-brand px-3" routerLink="/list-contato">
+
+      Loja de Jogos
+  </a>
+
+  <button class="navbar-toggler d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu">
+
+    <span class="navbar-toggler-icon"></span>
+
+  </button>
+
+</header>
+
+<!-- Sidebar navigation -->
+
+<div class="container-fluid">
+
+  <div class="row flex-nowrap">
+
+    <nav id="sidebarMenu" class="col-md-2 d-md-block bg-white bg-opacity-75 sidebar collapse">
+
+        <ul class="nav flex-column min-vh-100">
+
+          <li class="nav-item">
+
+            <a class="nav-link" routerLink="/add-contato" routerLinkActive="active">
+
+              Adicionar jogo
+
+            </a>
+
+          </li>
+
+          <li class="nav-item">
+
+            <a class="nav-link active" routerLink="/list-contato" routerLinkActive="active">
+
+              Lista de Jogos
+
+            </a>
+
+          </li>
+
+        </ul>
+
+    </nav>
+
+    <!-- Main content -->
+
+    <main class="col-md-10">
+
+      <router-outlet></router-outlet>
+
+    </main>
+
+  </div>
+
+</div>
